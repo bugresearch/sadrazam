@@ -3,7 +3,7 @@ import json
 import konus
 
 conn = http.client.HTTPSConnection("api.collectapi.com")
-headers = {'content-type': "application/json",'authorization': "apikey 1p85vZVroBD9uXEmahOrwp:799Kt27sv26Mab37qbUjkg"}
+headers = {'content-type': "application/json",'authorization': "apikey xxx:xxx"}
 conn.request("GET", "/economy/currencyToAll?int=10&base=TRY", headers=headers)
 res = conn.getresponse()
 data = res.read()
